@@ -105,7 +105,7 @@ footer {
   margin: auto;
   padding-top: 0.75rem;
 }
-@media (min-width: 560px){
+@media (min-width: 375px){
   body {
     height: 100vh;
     overflow: hidden;
