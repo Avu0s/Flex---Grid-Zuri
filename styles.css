@@ -41,7 +41,7 @@ header > h1 {
   box-shadow: var(--boxShadow);
 }
 .card {
-  padding: 2.5rem;
+  padding: 3rem;
 }
 .card > h1 {
   font-family: "Big Shoulders Display";
