@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito+Sans:wght@200;300;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Nunito+Sans:wght@200;300;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 :root {
   --blackish: #222;
   --fadedWhite: hsla(0, 0%, 100%, 0.75);
@@ -105,7 +104,7 @@ footer {
   margin: auto;
   padding-top: 0.75rem;
 }
-@media (min-width: 375px) {
+@media (min-width: 475px) {
   body {
     height: 100vh;
     overflow: hidden;
