@@ -40,12 +40,12 @@ header > h1 {
   box-shadow: var(--boxShadow);
 }
 .card {
-  padding: 2.5rem;
+  padding: 2rem;
 }
 .card > h1 {
   font-family: "Big Shoulders Display";
   color: var(--offWhite);
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 .card > p {
   margin-top: 1.5rem;
@@ -58,7 +58,7 @@ button {
   border: solid 0.15rem var(--offWhite);
   color: var(--offWhite);
   border-radius: 1.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5rem;
 }
 .orange {
   border-radius: 0.5rem 0.5rem 0 0;
