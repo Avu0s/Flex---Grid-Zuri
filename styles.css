@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 :root {
   --blackish: #222;
   --fadedWhite: hsla(0, 0%, 100%, 0.75);
@@ -7,6 +7,7 @@
   --teal: hsl(184, 100%, 22%);
   --orange: hsl(31, 77%, 52%);
   --boxShadow: 0 1px 6px 0 rgba(161, 162, 165, 0.28);
+  --dTeal: hsl(178, 100%, 6%);
 }
 * {
   margin: 0;
@@ -14,32 +15,29 @@
   font-family: "Lexend Deca", sans-serif;
 }
 body {
-  background-color: var(--offWhite);
+  height: 100%;
+  background: var(--offWhite);
 }
 a {
   text-decoration: none;
   color: var(--offWhite);
   padding: 0.75rem 1.25rem;
   border-radius: 1.5rem;
-  background-color: var(--green);
+  background: var(--green);
   border: solid 0.15rem var(--green);
 }
 header {
   display: flex;
   height: 12vh;
 }
-header > h1 {
-  color: var(--green);
-  text-align: center;
-  margin: auto;
-}
 .cards {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 1rem;
   box-shadow: var(--boxShadow);
 }
 .card {
+  position: relative;
   padding: 2rem;
 }
 .card > h1 {
@@ -48,63 +46,57 @@ header > h1 {
   margin-top: 2.5rem;
 }
 .card > p {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 6rem 0;
   line-height: 1.75rem;
   color: var(--fadedWhite);
 }
 button {
+  position: absolute;
+  bottom: 2rem;
   cursor: pointer;
   padding: 0.75rem 1.25rem;
   border: solid 0.15rem var(--offWhite);
   color: var(--offWhite);
   border-radius: 1.5rem;
-  margin-top: 5rem;
 }
 .orange {
   border-radius: 0.5rem 0.5rem 0 0;
-  background-color: var(--orange);
+  background: var(--orange);
 }
 .teal {
-  background-color: var(--teal);
+  background: var(--teal);
 }
 .green {
   border-radius: 0 0 0.5rem 0.5rem;
-  background-color: var(--green);
+  background: var(--green);
 }
 .orange > button {
-  background-color: var(--orange);
+  background: var(--orange);
 }
 .teal > button {
-  background-color: var(--teal);
+  background: var(--teal);
 }
 .green > button {
-  background-color: var(--green);
+  background: var(--green);
 }
 .orange > button:hover {
-  background-color: var(--offWhite);
+  background: var(--offWhite);
   color: var(--orange);
 }
 .teal > button:hover {
-  background-color: var(--offWhite);
+  background: var(--offWhite);
   color: var(--teal);
 }
 a:hover,
 .green > button:hover {
-  background-color: var(--offWhite);
+  background: var(--offWhite);
   color: var(--green);
-}
-footer {
-  height: 16vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .btn {
   margin: auto;
-  padding-top: 0.75rem;
+  margin-top: 2.5rem;
 }
-@media (min-width: 475px) {
+@media (min-width: 375px) {
   body {
     height: 100vh;
     overflow: hidden;
@@ -112,10 +104,10 @@ footer {
   .cards {
     max-width: 65%;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 1.5rem auto;
   }
   .card {
-    min-width: 13.5rem;
+    min-width: 9rem;
     padding: 2.35rem;
   }
   .card > p {
